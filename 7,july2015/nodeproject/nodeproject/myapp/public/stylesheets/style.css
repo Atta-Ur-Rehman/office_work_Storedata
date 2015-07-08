@@ -6,3 +6,29 @@ body {
 a {
   color: #00B7FF;
 }
+.purchasingBtn{
+  background-color: #00B7FF;
+  width: 100px;
+  height: 100px;
+}
+.cate{
+  width: 145px;padding: 12px;padding-left: 7px;
+}
+.head{
+  padding: 100px;
+}
+.maincat{
+  top:50px;
+}
+.mainslide{
+  top:50px;
+}
+.dresses{
+  margin-top: 50px;
+}
+#magntp{
+  margin-top: 50px;
+}
+#index{
+  background-color: rgba(152, 191, 33, 0.47);
+}

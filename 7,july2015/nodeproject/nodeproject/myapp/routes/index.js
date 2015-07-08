@@ -12,11 +12,9 @@ router.get('/', function(req, res, next) {
 
   res.render('index.ejs');
 });
-router.get('/home',function(req,res,next){
-  res.render('home.ejs');
-});
+
 router.get('/fruit', function (req, res, next) {
-  //console.log("Pakistan");
+  console.log("Pakistan");
   //var data ={
   //  data : 'pakistan'
   //};
@@ -31,21 +29,23 @@ router.get('/sport',function(req,res,next){
 router.get('/bakery',function(req,res,next){
   res.render('bakery.ejs');
 });
+router.get('/client',function(req,res){
+  res.render('clientlist.ejs');
+})
 
+var array=[];
 router.post("/addNewProduct", function(req, res){
-  var array=[];
-  if(req.body && req.body.length){
     array.push(req.body)
-  }
-  else{
-    array = [req.body]
-  }
+
   //req.pipe(array)
   console.log(array);
  // res.render(array)
   res.send(array);
-})
-
+});
+router.get("/getData", function (req,res) {
+console.log(array);
+  res.send(array);
+});
 
 //router.post("/addNewProducts", function(req, res){
 //  console.log(req.body);
